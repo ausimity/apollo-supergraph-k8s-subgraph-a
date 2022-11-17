@@ -14,7 +14,7 @@ type Location @key(fields: "id") {
   "The name of the location"
   name: String!
   "A short description about the location"
-  description: String!
+  description: String! @tag(name: "experimental")
   "The location's main photo as a URL"
   photo: String! @deprecated
 }
